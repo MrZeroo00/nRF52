@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Make') {
       steps {
-        sh 'cd examples/peripheral/blinky/pca10036/blank/armgcc'
+        dir('cd examples/peripheral/blinky/pca10036/blank/armgcc')
         sh 'ls'
       }
     }
